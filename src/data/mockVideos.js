@@ -1,0 +1,180 @@
+// data/mockVideos.js
+export const videos = [
+    {
+      id: '1',
+      title: 'Learn Next.js in 10 Minutes',
+      thumbnail: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=320&h=180&fit=crop',
+      channel: 'Tech Tutorials',
+      views: '125K views',
+      uploadTime: '2 days ago',
+    },
+    {
+      id: '2',
+      title: 'React Hooks Explained',
+      thumbnail: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=320&h=180&fit=crop',
+      channel: 'Code Academy',
+      views: '89K views',
+      uploadTime: '5 days ago',
+    },
+    {
+      id: '3',
+      title: 'Building a REST API',
+      thumbnail: 'https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=320&h=180&fit=crop',
+      channel: 'Backend Pro',
+      views: '203K views',
+      uploadTime: '1 week ago',
+    },
+    {
+      id: '4',
+      title: 'CSS Grid Layout Tutorial',
+      thumbnail: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=320&h=180&fit=crop',
+      channel: 'Design Basics',
+      views: '156K views',
+      uploadTime: '3 days ago',
+    },
+    {
+      id: '5',
+      title: 'JavaScript ES6 Features',
+      thumbnail: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=320&h=180&fit=crop',
+      channel: 'JS Masters',
+      views: '78K views',
+      uploadTime: '1 day ago',
+    },
+    {
+      id: '6',
+      title: 'MongoDB Tutorial for Beginners',
+      thumbnail: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=320&h=180&fit=crop',
+      channel: 'Database Guru',
+      views: '245K views',
+      uploadTime: '4 days ago',
+    },
+    {
+      id: '7',
+      title: 'Advanced Python Programming',
+      thumbnail: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=320&h=180&fit=crop',
+      channel: 'Python Expert',
+      views: '312K views',
+      uploadTime: '1 week ago',
+    },
+    {
+      id: '8',
+      title: 'Web3 and Blockchain Explained',
+      thumbnail: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=320&h=180&fit=crop',
+      channel: 'Crypto Code',
+      views: '189K views',
+      uploadTime: '2 days ago',
+    },
+    {
+      id: '9',
+      title: 'Docker for Beginners',
+      thumbnail: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=320&h=180&fit=crop',
+      channel: 'DevOps Daily',
+      views: '167K views',
+      uploadTime: '6 days ago',
+    },
+    {
+      id: '10',
+      title: 'Machine Learning Basics',
+      thumbnail: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=320&h=180&fit=crop',
+      channel: 'AI Academy',
+      views: '298K views',
+      uploadTime: '4 days ago',
+    },
+    {
+      id: '11',
+      title: 'Vue.js 3 Complete Guide',
+      thumbnail: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=320&h=180&fit=crop',
+      channel: 'Frontend Masters',
+      views: '145K views',
+      uploadTime: '3 days ago',
+    },
+    {
+      id: '12',
+      title: 'AWS Cloud Computing',
+      thumbnail: 'https://images.unsplash.com/photo-1451187580459-43490cb424c9?w=320&h=180&fit=crop',
+      channel: 'Cloud Experts',
+      views: '234K views',
+      uploadTime: '1 day ago',
+    },
+  ];
+  
+  export const videoData = {
+    '1': {
+      title: 'Learn Next.js in 10 Minutes',
+      channel: 'Tech Tutorials',
+      subscribers: '125K subscribers',
+      views: '125,432 views',
+      uploadTime: 'Dec 20, 2024',
+      description: 'In this tutorial, we\'ll cover the basics of Next.js and build a simple application. Perfect for beginners!',
+      likes: '2.5K',
+      videoUrl: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=854&h=480&fit=crop',
+    },
+    '2': {
+      title: 'React Hooks Explained',
+      channel: 'Code Academy',
+      subscribers: '89K subscribers',
+      views: '89,234 views',
+      uploadTime: 'Dec 16, 2024',
+      description: 'Deep dive into React Hooks including useState, useEffect, useContext, and custom hooks.',
+      likes: '1.8K',
+      videoUrl: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=854&h=480&fit=crop',
+    },
+    '3': {
+      title: 'Building a REST API',
+      channel: 'Backend Pro',
+      subscribers: '203K subscribers',
+      views: '203,567 views',
+      uploadTime: 'Dec 14, 2024',
+      description: 'Learn how to build a scalable REST API using Node.js and Express.',
+      likes: '3.2K',
+      videoUrl: 'https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=854&h=480&fit=crop',
+    },
+    '4': {
+      title: 'CSS Grid Layout Tutorial',
+      channel: 'Design Basics',
+      subscribers: '156K subscribers',
+      views: '156,789 views',
+      uploadTime: 'Dec 18, 2024',
+      description: 'Master CSS Grid with practical examples and create responsive layouts.',
+      likes: '2.1K',
+      videoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=854&h=480&fit=crop',
+    },
+    '5': {
+      title: 'JavaScript ES6 Features',
+      channel: 'JS Masters',
+      subscribers: '78K subscribers',
+      views: '78,123 views',
+      uploadTime: 'Dec 20, 2024',
+      description: 'Discover the latest JavaScript ES6 features that will improve your code.',
+      likes: '1.2K',
+      videoUrl: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=854&h=480&fit=crop',
+    },
+    '6': {
+      title: 'MongoDB Tutorial for Beginners',
+      channel: 'Database Guru',
+      subscribers: '245K subscribers',
+      views: '245,890 views',
+      uploadTime: 'Dec 17, 2024',
+      description: 'Complete MongoDB tutorial covering CRUD operations, indexing, and more.',
+      likes: '4.1K',
+      videoUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=854&h=480&fit=crop',
+    },
+  };
+  
+  // Alternative: If you want to use local images, create a public/thumbnails folder
+  // and replace the URLs with local paths like '/thumbnails/video1.jpg'
+  
+  // Example with local images (create public/thumbnails folder first):
+  /*
+  export const videosWithLocalImages = [
+    {
+      id: '1',
+      title: 'Learn Next.js in 10 Minutes',
+      thumbnail: '/thumbnails/nextjs-tutorial.jpg',
+      channel: 'Tech Tutorials',
+      views: '125K views',
+      uploadTime: '2 days ago',
+    },
+    // ... more videos
+  ];
+  */

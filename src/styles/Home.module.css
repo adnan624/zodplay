@@ -1,0 +1,17 @@
+.container {
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .main {
+    margin-top: 56px;
+    padding: 24px;
+  }
+  
+  .videoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }

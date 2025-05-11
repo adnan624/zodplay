@@ -1,0 +1,220 @@
+/* VideoCard.module.css */
+
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .videoCard {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .videoCard:hover {
+    opacity: 0.95;
+  }
+  
+  .thumbnailContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .duration {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  
+  .videoInfo {
+    padding: 12px;
+  }
+  
+  .headerRow {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .avatarContainer {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .channelAvatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e5e5e5;
+  }
+  
+  .videoDetails {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0 0 6px 0;
+    color: #030303;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+  }
+  
+  .channel {
+    font-size: 14px;
+    color: #606060;
+    margin: 0 0 4px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+  }
+  
+  .metadata {
+    font-size: 14px;
+    color: #606060;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  
+  .separator {
+    margin: 0 4px;
+    color: #606060;
+  }
+  
+  /* Grid layout for video card container */
+  .videoGridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .videoGridContainer {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 16px;
+    }
+    
+    .videoInfo {
+      padding: 10px;
+    }
+    
+    .headerRow {
+      gap: 10px;
+    }
+    
+    .title {
+      font-size: 15px;
+    }
+    
+    .channel,
+    .metadata {
+      font-size: 13px;
+    }
+    
+    .channelAvatar {
+      width: 32px;
+      height: 32px;
+    }
+    
+    .avatarContainer {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .videoGridContainer {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 12px;
+    }
+    
+    .title {
+      font-size: 14px;
+    }
+    
+    .videoInfo {
+      padding: 8px;
+    }
+    
+    .headerRow {
+      gap: 8px;
+    }
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .videoCard {
+      background: #0f0f0f;
+    }
+    
+    .title {
+      color: #ffffff;
+    }
+    
+    .channel,
+    .metadata {
+      color: #aaaaaa;
+    }
+    
+    .separator {
+      color: #aaaaaa;
+    }
+    
+    .channelAvatar {
+      background: #272727;
+    }
+  }
+  
+  /* Reset some default Next.js link styles */
+  a.cardLink:hover {
+    text-decoration: none;
+  }
+  
+  a.cardLink {
+    outline: none;
+  }
+  
+  a.cardLink:focus .videoCard {
+    outline: 2px solid #0095ff;
+    outline-offset: 2px;
+  }
